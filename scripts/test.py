@@ -1,4 +1,7 @@
 import yfinance as yf
 
-data = yf.download("9984.T", period="5d", interval="1d")
+
+print("株価データを取得中...")
+data = yf.download("7203.T", period="1d", interval="1h")
+print("最新データ: ")
 print(data.tail())
